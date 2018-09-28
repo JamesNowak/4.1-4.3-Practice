@@ -1,0 +1,22 @@
+print("This program will calculate total rainfall and average")
+print("monthly rainfall for a period of years.")
+value = int(input("How many years would you like to collect data for?"))
+total = int(0)
+
+for i in range(value):
+    jan = input("How much rain fell during the month of January?")
+    feb = input("How much rain fell during the month of February?")
+    march = input("How much rain fell during the month of March?")
+    april = input("How much rain fell during the month of April?")
+    may = input("How much rain fell during the month of May?")
+    june = input("How much rain fell during the month of June?")
+    july = input("How much rain fell during the month of July?")
+    aug = input("How much rain fell during the month of August?")
+    sep = input("How much rain fell during the month of September?")
+    Oct = input("How much rain fell during the month of October?")
+    nov = input("How much rain fell during the month of November?")
+    dec = input("How much rain fell during the month of December")
+    total = int(jan + feb + march + april + may + june + july + aug + sep + Oct + nov + dec)
+
+print("The total amount of rainfall was:", total, "inches")
+print("The average monthly rainfall was:", total / value,  "inches")
